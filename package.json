@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "run dev",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "@next/font": "13.1.1",
     "eslint": "8.31.0",
