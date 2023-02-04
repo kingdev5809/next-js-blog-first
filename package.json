@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+<<<<<<< HEAD
     "start": "run dev",
+=======
+    "start": "next dev",
+>>>>>>> 9ac40a3f847609538fd76944a4d5632638f5d2b8
     "lint": "next lint"
   },
   
