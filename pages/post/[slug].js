@@ -63,6 +63,4 @@ export async function getStaticPaths() {
   };
 }
 
-// 9:00
 
-// bag 6:00
