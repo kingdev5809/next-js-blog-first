@@ -8,17 +8,16 @@ import {
   Comments,
   CommentsForm,
   Loader,
+  SinglePost,
 } from "../../components";
 import { getPostDetails, getPosts } from "../../services";
 
 const PostDetails = ({ post }) => {
-
   const router = useRouter();
 
   if (router.isFallback) {
     return <Loader />;
   }
-
 
   return (
     <div className="container mx-auto px-10 mb-8">
@@ -37,6 +36,10 @@ const PostDetails = ({ post }) => {
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
+          <SinglePost
+            slug={post.slug}
+            categories={post.categories.map((category) => category.slug)}
+          />
         </div>
       </div>
     </div>
@@ -62,5 +65,3 @@ export async function getStaticPaths() {
     fallback: true,
   };
 }
-
-
