@@ -48,3 +48,5 @@ const SinglePost = ({categories, slug}) => {
 };
 
 export default SinglePost;
+
+
