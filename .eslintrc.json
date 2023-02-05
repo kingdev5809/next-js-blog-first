@@ -3,6 +3,7 @@
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
-    "react/jsx-no-duplicate-props": [1, { "ignoreCase": false }]
+    "react/jsx-no-duplicate-props": [1, { "ignoreCase": false }],
+    "extends": ["next", "prettier"]
   }
 }

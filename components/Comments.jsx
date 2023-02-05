@@ -9,6 +9,7 @@ const Comments = ({slug}) => {
   useEffect(() => {
     getComments(slug)
       .then(res => setComments(res))
+      /* eslint-disable-next-line react/jsx-props-no-spreading */
   }, [])
 
   return (

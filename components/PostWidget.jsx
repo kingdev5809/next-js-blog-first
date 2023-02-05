@@ -15,6 +15,7 @@ const PostWidget = ({categories, slug}) => {
       getRecentPosts()
         .then(res => setRelatedPosts(res))
     }
+    /* eslint-disable-next-line react/jsx-props-no-spreading */
   }, [slug])
 
   return (
